@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Transaksi</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #4CAF50;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:  rgb(194, 179, 96);
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header img {
+            height:100px;
+        }
+
+        nav {
+            background-color:  #030105;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(194, 179, 96);
+            color: white;
+            padding: 2px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="liberloay.png" alt="Library Logo">
+        <h1>Transaksi Librloay</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="buku.html">Buku</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            
+           
+        </ul>
+    </nav>
+<div class="container">
+<h2>Daftar Transaksi</h2>
+
+<table>
+    <tr>
+        <th>Nama Transaksi</th>
+        <th>Jumlah (IDR)</th>
+        <th>Kategori</th>
+    </tr>
+    <tr>
+        <td>Pembelian Buku</td>
+        <td>150.000</td>
+        <td>Pendidikan</td>
+    </tr>
+    <tr>
+        <td>Makan Siang</td>
+        <td>75.000</td>
+        <td>Makanan & Minuman</td>
+    </tr>
+    <tr>
+        <td>Tagihan Listrik</td>
+        <td>300.000</td>
+        <td>Utilitas</td>
+    </tr>
+    <tr>
+        <td>Beli Pulsa</td>
+        <td>100.000</td>
+        <td>Komunikasi</td>
+    </tr>
+    <tr>
+        <td>Transportasi</td>
+        <td>50.000</td>
+        <td>Transportasi</td>
+    </tr>
+    <tr>
+        <td>Belanja Bulanan</td>
+        <td>500.000</td>
+        <td>Kebutuhan Pokok</td>
+    </tr>
+    <tr>
+        <td>Hiburan</td>
+        <td>200.000</td>
+        <td>Hiburan</td>
+    </tr>
+    <tr>
+        <td>Donasi</td>
+        <td>100.000</td>
+        <td>Amal</td>
+    </tr>
+</table> <br>
+<a href="transaksi.html" class="btn">back</a>
+</div>
+<footer>
+    <p>&copy;2024 LibrLoay Application by{"Defrika Safdha Marwanda"} All rights reserved.</p>
+</footer>
+</body>
+</html>

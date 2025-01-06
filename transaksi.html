@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: rgb(194, 179, 96);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:  rgb(194, 179, 96);
+            color: white;
+            padding: 10px 20px;
+        }
+        header img {
+            height: 100px;
+            
+        }
+        
+        nav {
+            background-color:  #030105;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="date"] {
+             width: 100%;
+             padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2px 0;
+            background-color: rgb(194, 179, 96);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="liberloay.png" alt="Library Logo">
+        <h1>Transaksi Librloay</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="buku.html">Buku</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            
+           
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Form untuk Meminjam Buku -->
+        <div class="form-section">
+            <h2>Pinjam Buku</h2>
+            <form id="pinjamForm">
+                <label for="namaPeminjam">Nama Peminjam:</label>
+                <input type="text" id="namaPeminjam" name="namaPeminjam" required>
+                
+                <label for="judulBuku">Judul Buku:</label>
+                <input type="text" id="judulBuku" name="judulBuku" required>
+                
+                <label for="tanggalPinjam">Tanggal Pinjam:</label>
+                <input type="date" id="tanggalPinjam" name="tanggalPinjam" required>
+                
+                <button type="submit">Pinjam Buku</button>
+            </form>
+        </div>
+
+        <!-- Form untuk Mengembalikan Buku -->
+        <div class="form-section">
+            <h2>Kembalikan Buku</h2>
+            <form id="kembalikanForm">
+                <label for="namaPengembali">Nama Pengembali:</label>
+                <input type="text" id="namaPengembali" name="namaPengembali" required>
+                
+                <label for="judulBukuKembali">Judul Buku:</label>
+                <input type="text" id="judulBukuKembali" name="judulBukuKembali" required>
+                
+                <label for="tanggalKembali">Tanggal Kembali:</label>
+                <input type="date" id="tanggalKembali" name="tanggalKembali" required>
+                
+                <button type="submit">Kembalikan Buku</button>
+            </form>
+        </div>
+
+        <!-- Daftar Buku yang Dipinjam -->
+        <div class="daftar-buku">
+            <h2>Daftar Buku yang Dipinjam</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Peminjam</th>
+                        <th>Judul Buku</th>
+                        <th>Tanggal Pinjam</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zain irsyad</td>
+                        <td>Harry Potter</td>
+                        <td>2024-01-15</td>
+                    </tr>
+                    <tr>
+                        <td>Annisa Athaya</td>
+                        <td>Ringkasan Shahih Muslim</td>
+                        <td>2024-01-20</td>
+                    </tr>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>1984</td>
+                        <td>2024-01-25</td>
+                    </tr>
+                </tbody>
+            </table>
+            <script src="transaksi.js"></script>
+
+            <a href="daftar_transaksi.html" class="btn">Add New Transaction</a>
+            <a href="#" class="btn">save</a>
+
+        </div>
+    </div>
+        <a href="menu.html" class="btn">back</a>
+
+    
+</body>
+</html>

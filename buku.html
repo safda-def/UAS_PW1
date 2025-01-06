@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>buku library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: rgb(194, 179, 96);
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:  rgb(194, 179, 96);
+            color: white;
+           
+        }
+        header img {
+            height: 100px;
+            
+        }
+        
+        nav {
+            background-color:  #030105;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2px 0;
+            background-color: rgb(194, 179, 96);
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: black;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="liberloay.png" alt="Library Logo">
+      <h1>Buku Librloay</h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="buku.html">Buku</a></li>
+        <li><a href="transaksi.html">Transaksi</a></li>
+    </ul>
+</nav>
+  <table>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 ms-3">
+            <img src="divergent.jpg" class="card-img-top" alt="50">
+            <div class="card-body">
+              <h5 class="card-title">Divergent</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button"><a href="https://www.goodreads.com/book/show/8306857-divergent">Baca</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="harry potter1.jpeg" class="card-img-top" alt="50">
+            <div class="card-body">
+              <h5 class="card-title">Harry Potter</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button"><a href="https://www.google.co.id/books/edition/Harry_Potter_dan_Relikui_Kematian/3sSVzLsHIb8C?hl=id&gbpv=1&dq=harry+potter&printsec=frontcover">Baca</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="horor.jpeg" class="card-img-top" alt="50%">
+            <div class="card-body">
+              <h5 class="card-title">Folk Horror</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <button type="button"><a href="https://www.google.co.id/books/edition/Folk_Horror/dKy-EAAAQBAJ?hl=id&gbpv=1&dq=folk+horror&pg=PT250&printsec=frontcover">Baca</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="islam.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ringkasan Shahih Muslim</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <button type="button"><a href="https://www.google.co.id/books/edition/Ringkasan_Shahih_Muslim/rMp7WLaV6wMC?hl=id&gbpv=1&dq=ringkasan+shahih+muslim&printsec=frontcover">Baca</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="boruto naruto.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Boruto Naruto Next Generations 9</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button"><a href="https://www.google.co.id/books/edition/Boruto_Naruto_Next_Generations_9/z7cyEQAAQBAJ?hl=id&gbpv=1&dq=naruto+x+boruto&pg=PP1&printsec=frontcover">Baca</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="dilan.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dilan</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button"><a href="https://www.google.co.id/books/edition/Dilan/U_-BBAAAQBAJ?hl=id&gbpv=1&dq=dilan&pg=PA102&printsec=frontcover">Baca</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="entrepreneurship strategy.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Entrepreneurship Strategy</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button"><a href="https://www.google.co.id/books/edition/Entrepreneurship_Strategy/1O1yAwAAQBAJ?hl=id&gbpv=1&dq=You+Do+You+productnation&pg=PA357&printsec=frontcover">Baca</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="bahasa prancis.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Belajar Bahasa Prancis</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button"><a href="https://www.google.co.id/books/edition/Buku_Saku_Lengkap_Percakapan_Sehari_hari/nemOugPOjPcC?hl=id&gbpv=1&dq=172+hari+buku&pg=PR10&printsec=frontcover">Baca</a></button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="zoonosis.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zoonosis</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <button type="button"><a href="https://www.google.co.id/books/edition/Buku_Ajar_Zoonosis/QYfmEAAAQBAJ?hl=id&gbpv=1&dq=172+hari+buku&pg=PA172&printsec=frontcover">Baca</a></button>
+              </div>
+            </div>
+          </div>
+          
+  </table>      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    
+        <a href="menu.html" class="btn">back</a>
+
+   
+  </body>
+</html>
